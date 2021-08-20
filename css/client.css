@@ -1,3 +1,8 @@
 body {
-    font-family: 'Anton', sans-serif; 
+   /*font-family: 'Anton', sans-serif; */
+}
+
+.jumbotron {
+    width: 95%;
+    margin: auto; 
 }
