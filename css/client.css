@@ -2,10 +2,15 @@ body {
    /*font-family: 'Anton', sans-serif; */
 }
 
+.jumbotron{
+    padding: 1em; 
+}
+
 @media (min-width: 768px){
 
     .jumbotron {
         width: 95%;
         margin: auto; 
+        padding: 2em;
     }
 }
