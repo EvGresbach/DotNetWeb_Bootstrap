@@ -6,11 +6,9 @@ $(function(){
 
         e.preventDefault();
         let code = $(this).data('code');
-        var codeReplaced = $('#code').html().replace('CODE', code); 
         let productName = $(this).data('productname'); 
-        var productNameReplaced = $('#product').html().replace('Product Name', productName); 
-        $('#code').html(codeReplaced); 
-        $('#product').html(productNameReplaced); 
+        $('#code').text(code); 
+        $('#product').text(productName); 
 
         // first pause the audio (in case it is still playing)
         toast.pause();
