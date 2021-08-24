@@ -23,4 +23,11 @@ $(function(){
         
         $('#toast').toast({ autohide: false }).toast('show');
     });
+
+    $(document).on('keydown', function(e){
+        e.preventDefault(); 
+        if (e.key === 'Escape'){
+            $('#toast').toast('hide'); 
+        }
+    })
 });
