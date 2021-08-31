@@ -9,11 +9,38 @@
     <!-- pickadate -->
     <link rel="stylesheet" href="css/classic.css" />
     <link rel="stylesheet" href="css/classic.date.css" />
+    <!-- Animate css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Google fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Raleway&display=swap');
+    </style>
+    <!-- custom css -->
+    <style>
+        h1 {
+            font-family: 'Lobster';
+            color: slategray;
+            font-size: 3.5em;
+        }
+
+        body {
+            font-family: 'Raleway';
+        }
+
+        h1.animate__animated{
+            display: inline-block; 
+        }
+
+        .ball{
+            visibility: hidden; 
+        }
+    </style>
+
 </head>
 <body>
     <!-- content -->
     <div class="container">
-        <h1>Happy Birthday!</h1><hr />
+        <h1 class="animate__animated animate__heartBeat">Happy Birthday!</h1><hr />
         <form role="form">
             <div class="row">
                 <div class="col-sm">
@@ -25,9 +52,27 @@
                         <label for="birthday">Birthday</label>
                         <input type="text" class="form-control" id="birthday" placeholder="Enter birthday" />
                     </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Select your favorite balloons</h5>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="blue-green">
+                                <label class="form-check-label" for="blue-green">Blue-green balloons</label>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="pink">
+                                <label class="form-check-label" for="pink">Pink balloons</label>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="silver">
+                                <label class="form-check-label" for="silver">Silver balloons</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-primary mt-3" id="submit">Submit</button>
                 </div>
                 <div class="col-sm">
-                    <img src='media/blue_green_balloon.png' class='ball' alt='blue/gree balloon' id='blue/greenImg'>
+                    <img src='media/blue_green_balloon.png' class='ball' alt='blue/green balloon' id='blue-greenImg'>
                     <img src='media/pink_balloon.png' class='ball' alt='pink balloon' id='pinkImg'>
                     <img src='media/silver_balloon.png' class='ball' alt='silver balloon' id='silverImg'>
                 </div>
