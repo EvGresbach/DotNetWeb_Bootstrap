@@ -48,12 +48,18 @@ $(function(){
 
     //check all
     $('#check-all').on('click', function(){
-        $('input[type=checkbox]').prop('checked', true); 
+        $('input[type=checkbox]').prop('checked', true);
+        $('#blue-greenImg').removeClass().addClass('animate__animated animate__bounceInDown');
+        $('#pinkImg').removeClass().addClass('animate__animated animate__bounceInDown');
+        $('#purpleImg').removeClass().addClass('animate__animated animate__bounceInDown'); 
     })
 
     //clear all
     $('#clear-all').on('click', function(){
         $('input[type=checkbox]').prop('checked', false); 
+        $('#blue-greenImg').addClass('animate__animated animate__bounceOutUp');
+        $('#pinkImg').addClass('animate__animated animate__bounceOutUp');
+        $('#purpleImg').addClass('animate__animated animate__bounceOutUp'); 
     })
 
     //hover to change h1
