@@ -52,6 +52,8 @@ $(function(){
         $('#blue-greenImg').removeClass().addClass('animate__animated animate__bounceInDown');
         $('#pinkImg').removeClass().addClass('animate__animated animate__bounceInDown');
         $('#purpleImg').removeClass().addClass('animate__animated animate__bounceInDown'); 
+        $('#clear-all').removeClass('btn-outline-secondary').addClass('btn-secondary'); 
+        $('#check-all').removeClass('btn-secondary').addClass('btn-outline-secondary'); 
     })
 
     //clear all
@@ -60,6 +62,8 @@ $(function(){
         $('#blue-greenImg').addClass('animate__animated animate__bounceOutUp');
         $('#pinkImg').addClass('animate__animated animate__bounceOutUp');
         $('#purpleImg').addClass('animate__animated animate__bounceOutUp'); 
+        $('#check-all').removeClass('btn-outline-secondary').addClass('btn-secondary'); 
+        $('#clear-all').removeClass('btn-secondary').addClass('btn-outline-secondary'); 
     })
 
     //hover to change h1
