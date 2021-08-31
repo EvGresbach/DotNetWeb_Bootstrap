@@ -40,7 +40,7 @@ $(function(){
         else if($('.card input[type=checkbox]#pink').is(':checked'))
             $('#successful-toast').toast({ delay: 6000 }).toast('show'); 
 
-        else if($('.card input[type=checkbox]#silver').is(':checked'))
+        else if($('.card input[type=checkbox]#purple').is(':checked'))
             $('#successful-toast').toast({ delay: 6000 }).toast('show');
         else
             $('#failed-toast').toast({ delay: 6000 }).toast('show');
@@ -54,5 +54,28 @@ $(function(){
     //clear all
     $('#clear-all').on('click', function(){
         $('input[type=checkbox]').prop('checked', false); 
+    })
+
+    //hover to change h1
+    $("#blue-green-label").hover(
+        function(){
+            $('h1').css('color', '#3da8a8'); 
+        }, 
+        function(){
+            $('h1').css('color', 'slategray')
+    })
+    $("#pink-label").hover(
+        function(){
+            $('h1').css('color', 'pink'); 
+        }, 
+        function(){
+            $('h1').css('color', 'slategray')
+    })
+    $("#purple-label").hover(
+        function(){
+            $('h1').css('color', 'purple'); 
+        }, 
+        function(){
+            $('h1').css('color', 'slategray')
     })
 })
