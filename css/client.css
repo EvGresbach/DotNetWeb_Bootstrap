@@ -21,6 +21,10 @@ body {
     right: 10px;
 }
 
+#successful-toast{
+    border-color: primar;
+}
+
 @media (min-width: 768px){
 
     .jumbotron {

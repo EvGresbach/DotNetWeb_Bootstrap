@@ -1,3 +1,4 @@
+//Randomize Animations
 $(window).on('load', function(){
         
         let animations = 
@@ -13,7 +14,7 @@ $(window).on('load', function(){
     })
 
 $(function(){
-
+    //pickdate
     $('#birthday').pickadate({format: 'mmmm, d'}); 
 
     // uncheck all checkboxes (FireFox)
@@ -29,5 +30,19 @@ $(function(){
         $(this).is(':checked') ?
          $('#' + this.id + 'Img').removeClass().addClass('animate__animated animate__bounceInDown') :
          $('#' + this.id + 'Img').addClass('animate__animated animate__bounceOutUp');
+    })
+
+    //submit button toasts
+    $('#submit').on('click', function(){
+        if($('.card input[type=checkbox]#blue-green').is(':checked'))
+            $('#successful-toast').toast({ delay: 6000 }).toast('show');
+        
+        else if($('.card input[type=checkbox]#pink').is(':checked'))
+            $('#successful-toast').toast({ delay: 6000 }).toast('show'); 
+
+        else if($('.card input[type=checkbox]#silver').is(':checked'))
+            $('#successful-toast').toast({ delay: 6000 }).toast('show');
+        else
+            $('#failed-toast').toast({ delay: 6000 }).toast('show');
     })
 })
