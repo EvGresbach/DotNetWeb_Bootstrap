@@ -51,4 +51,8 @@ $(function(){
         $('input[type=checkbox]').prop('checked', true); 
     })
 
+    //clear all
+    $('#clear-all').on('click', function(){
+        $('input[type=checkbox]').prop('checked', false); 
+    })
 })
