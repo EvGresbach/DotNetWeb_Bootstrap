@@ -45,4 +45,10 @@ $(function(){
         else
             $('#failed-toast').toast({ delay: 6000 }).toast('show');
     })
+
+    //check all
+    $('#check-all').on('click', function(){
+        $('input[type=checkbox]').prop('checked', true); 
+    })
+
 })
